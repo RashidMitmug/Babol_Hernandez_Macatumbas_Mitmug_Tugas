@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="choice"></p>
+    <p id="coin"></p>
+    
+    <button onclick=chooseHead();>HEADS</button>
+    <button onclick=chooseTail();>TAILS</button>
+    <button onclick=headortail();>GENERATE</button>
+
+    <script>
+        var playerHP=100;
+        var opponentHP=100;
+        var x;
+        var y;
+        var dmg;
+
+        function chooseHead(){
+            document.getElementById("choice").innerHTML="You chose Heads!";
+        }
+
+        function chooseTail(){
+            document.getElementById("choice").innerHTML="You chose Tails!";
+        }
+
+        function headortail(){
+            x = Math.floor(Math.random()*10);
+        }
+        
+        if(x%2==0){
+            document.getElementById("coin").innerHTML="Coin is Heads";
+        }
+        else{
+            document.getElementById("coin").innerHTML="Coin is Tails"
+        }
+
+    </script>
+</body>
+</html>
