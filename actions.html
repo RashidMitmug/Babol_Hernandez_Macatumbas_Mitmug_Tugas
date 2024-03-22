@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice</title>
+</head>
+<body>
+    
+    <button onclick="playerAttack()">Attack the Opponent</button>
+    <button onclick="playerDefend()">Defend from the Attack</button>
+    <p id="displaychoice"></p>
+    <p id="oppchoice"></p>
+    <p id="turnEvent"></p>
+    <script>
+        var botchoice = opponentAction();
+        function opponentAction(){
+            var b = Math.floor(Math.random()*2);
+            var c;
+            switch(b){
+                case 0:
+                    document.getElementById("oppchoice").innerHTML="The Opponent chose to defend!";
+                    break;
+                case 1:
+                    document.getElementById("oppchoice").innerHTML="The Opponent chose to Attack!";
+                    break;
+            }
+            return b;
+        }
+        function playerAttack(){
+            document.getElementById("displaychoice").innerHTML="You Attacked!";
+            c = 1;
+        }
+        function playerDefend(){
+            document.getElementById("displaychoice").innerHTML="You Defended!";
+            c = 0;
+            if(c==botchoice){
+                document.getElementById("turnEvent").innerHTML="You both defended, you fucking pussies";
+            }
+            else if((c==0)&&(botchoice==1)){
+                /*temporary*/
+                document.getElementById("turnEvent").innerHTML="You tried to defend the opponent's attack"
+            }
+        }
+    </script>
+</body>
+</html>
