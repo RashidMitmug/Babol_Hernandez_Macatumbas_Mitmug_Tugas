@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DamageCalc</title>
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <div id="biggerbox">
+        <div id="box">
+        </div>
+        <p id="hpText">
+        </p>
+    </div>
+    <script>
+        /*base code for the health bar*/
+        const boxD = document.querySelector("box")
+
+        var botDamage=67;
+        var currentHP=100-botDamage;
+
+        var x=currentHP*4;
+
+        console.log(box)
+
+        box.style.width = x+'px';
+
+        document.getElementById("hpText").innerHTML= "Your Health: "+currentHP+"/100";
+    </script>
+</body>
+</html>

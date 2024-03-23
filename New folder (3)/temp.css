@@ -1,0 +1,14 @@
+#box{
+    height: 5vh;
+    width: 400px;
+    background-color: lawngreen;
+}
+#biggerbox{
+    width: 420px;
+    height: 11vh;
+    background-color: black;
+    padding-left: 10px;
+}
+#hpText{
+    color: white;
+}

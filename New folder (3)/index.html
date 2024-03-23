@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="biggerbox">
+        <div id="opphealth">
+        </div>
+        <p id="opphpText"></p>
+    </div>
+    <div id="biggerbox2">
+        <div id="yourhealth">
+        </div>
+        <p id="yourhpText"></p>
+    </div>
+    <div id="enemypic">
+        ><img id="enemy" src="images/enemyApose.png" alt="">
+    </div>
+    <div id="yourpic">
+        ><img id="you" src="images/yourNpose.png" alt="">
+    </div>
+    <div id="navbar">
+    
+    </div>
+    <script>
+        /*Your health*/
+        const boxD = document.querySelector("yourhealth")
+
+        var botDamage=67;
+        var currentHP=100-botDamage;
+
+        var x=currentHP*4;
+
+        yourhealth.style.width = x+'px';
+
+        document.getElementById("yourhpText").innerHTML= "Your Health: "+currentHP+"/100";
+
+        /*Enemy heath*/
+
+        const boxD2 = document.querySelector("opphealth")
+
+        var yourDamage=48;
+        currentHP=100-yourDamage;
+
+        x=currentHP*4;
+
+        opphealth.style.width = x+'px';
+
+        document.getElementById("opphpText").innerHTML= "Opponent's Health: "+currentHP+"/100";
+    </script>
+</body>
+<link rel="stylesheet" href="style.css">
+</html>

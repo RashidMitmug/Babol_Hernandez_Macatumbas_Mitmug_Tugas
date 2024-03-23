@@ -1,0 +1,60 @@
+*{
+    margin: 0%;
+}
+#yourhealth{
+    height: 5vh;
+    width: 400px;
+    background-color: lawngreen;
+}
+#opphealth{
+    height: 5vh;
+    width: 400px;
+    background-color: lawngreen;
+}
+#biggerbox{
+    right: 5%;
+    bottom: 30%;
+    position: fixed;
+    width: 420px;
+    height: 11vh;
+    background-color: black;
+    padding-left: 10px;
+}
+#yourhpText{
+    color: white;
+}
+#opphpText{
+    color: white;
+}
+#biggerbox2{
+    left: 5%;
+    top: 5%;
+    position: fixed;
+    width: 420px;
+    height: 11vh;
+    background-color: black;
+    padding-left: 10px;
+}
+#navbar{
+    bottom: 0%;
+    position: fixed;
+    width: 100vw;
+    height: 27vh;
+    background-color: rgb(176, 176, 176);
+}
+#enemy{
+    width: 25vw;
+}
+#you{
+    width: 25vw;
+}
+#enemypic{
+    right:15%;
+    top: 10%;
+    position: fixed;
+}
+#yourpic{
+    left:15%;
+    bottom:26%;
+    position: fixed;
+}
